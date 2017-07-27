@@ -1,3 +1,3 @@
-The examples listed here use the bladderbatch data set split into two files - one containg the genetic expression info,
-and the other containing batch ids in the same order as the listed cell lines, as well as columns used to designate 
-various covariates (e.g., age and/or cancer status), which can further be used to adjust the original data.
+The examples listed here use the Python ComBat algorithm on the bladderbatch data set split into two files: one contains the 
+genetic expression info, and the other contains batch ids in the same order as the listed cell lines, as well as columns used to 
+designate various covariates (e.g., age and/or cancer status), which can further be used to adjust the original data.
