@@ -1,7 +1,7 @@
 The examples listed here use the Python ComBat algorithm on the bladderbatch data set split into two files: one contains the genetic expression info (expr), and the other contains batch ids in the same order as the listed cell lines, as well as columns used to designate various covariates (pheno - e.g., age and/or cancer status), which can further be used to adjust the original data.
 
-MeanandVariance uses the minimal settings - no model matrix to identify covariates, adjusts for both location and scale, and does not use a referance batch.
+MeanandVariance uses the minimal settings - no model matrix to identify covariates, adjusts for both location and scale, and does not use a reference batch.
 
 MeanOnly_Age_CancerStatus adjusts the data for location (mean) only, and uses age and cancer status as additional adjustment factors when performing the calculation.
 
-MeanOnly with refbatch2 has the same settings as the CancerStatus example above, but also designates batch number 2 as the referance batch to which all other batches are adjusted (while batch 2 itself remains unadjusted).
+MeanOnly with refbatch2 has the same settings as the CancerStatus example above, but also designates batch number 2 as the reference batch to which all other batches are adjusted (while batch 2 itself remains unadjusted).
