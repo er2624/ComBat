@@ -1,11 +1,11 @@
 ComBat_in_Python contains the minimum essential elements of ComBat along with a brief description of each key piece. This is a build upon the code by BrentP referenced in the main README, and now includes both the mean_only and ref_batch option provided in the R version of ComBat. This allows for location only adjustment in cases were scale adjustment may not be biologically appropriate, and for designation of a reference batch to which all other batches may be adjusted while the reference batch itself remains unchanged (something that may be useful in machine learning applications). 
 
-However, like the BrenP code, this still does not feature a non-parametric option. 
+However this code still does not feature a non-parametric option. 
 
 The two worked examples use 7 databanks (described within the code) to compile a list of ~12,000 genes with expression data for ~400 individual cell "line" samples (many of which are not actual immortalized cell lines - the list includes neurospheres, patient samples, etc).
 
-Both examples use the mean only version of ComBat on all ~12,000 genes specified (both cancer implicated and non cancer implicated), and the second example denoted CCLE uses that databank as a reference batch.
+Both examples use the mean only version of ComBat on all ~12,000 genes specified (both cancer implicated and non cancer implicated), and the second example (denoted CCLE) uses the CCLE databank as a reference batch.
 
-The Data are visualized using MDS, and results are also available with multiple different reference batches for cancer implicated, non cancer implicated, and house keeping genes as well.
+The data are visualized using MDS, and results are also available with multiple different reference batches for cancer implicated, non cancer implicated, and house-keeping genes as well.
 
 Each run is assessed using spearman correlation to enusre pre-and post ComBat validity. 
