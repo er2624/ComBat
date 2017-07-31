@@ -39,5 +39,10 @@ As described in the "User Manual" link, these features can be crucial: when comp
 
 Additionally, if the purpose of batch normalization is to use the adjusted data for machine learning, it would likely enchance predictive accuracy if the data sets the algorithm is to be applied to have been normalized to the data set the algorithm was taught on - which is precisely what the reference batch normalization feature does.
 
-Using a translation of the ComBat function developed by brentp
+Additionally, if other catagories exist for the data (e.g., "age" or "status of the cancer" are the two used in the examples presented within bladderbatch data), these can also be used as covariates to normalize the data.
 
+*NOTE: The R version provides an option to run a non-parametric version of ComBat. The Python code presented here lacks this option.
+
+The Python code presented here is essentially the same code originally presented by the brentp link, with two new bells and whistles: ref_batch designation and mean_only option. These were added on by simply going through the linked original R code, and translating the effect of the data manipulations into R. Resulting values in Python differ from those obtained in R by no more than 1e(-5). 
+
+The code itself is under GBM_Project_Notebooks, including two worked examples using data compiled from 7 different databanks - 6 brain tissue specific and 1 skin. To compare the results of this code to both the brentp and original R codes, the Worked_Examples section contains several applications of this code to the popular bladderbatch data set (the exact same data provided in the brentp link) under varying settings (e.g., mean_only = True, identifying numerical covariates, etc).
