@@ -47,4 +47,6 @@ The Python code presented here is essentially the same code originally presented
 
 The code itself is under GBM_Project_Notebooks, including two worked examples using data compiled from 7 different databanks - 6 brain tissue specific and 1 skin. To compare the results of this code to both the brentp and original R codes, the Worked_Examples section contains several applications of this code to the popular bladderbatch data set (the exact same data provided in the brentp link) under varying settings (e.g., mean_only = True, identifying numerical covariates, etc).
 
-The code by itself is presented from Jupyter Notebook and is heavily annotated so that, if desired, each of the functions running within ComBat and the lines performing the calculations within ComBat itself can be directly lined up with the equations present in the 2007 Johnson et al. - e.g., the delta_star hyperparameters are explicitely identified, etc.  
+The code by itself is presented from Jupyter Notebook and is heavily annotated so that, if desired, each of the functions running within ComBat and the lines performing the calculations within ComBat itself can be directly lined up with the equations present in the 2007 Johnson et al. - e.g., the delta_star hyperparameters are explicitely identified, etc.
+
+The code in the examples has these annotations removed, and the bladderbatch examples specifically detail what a model matrix must look like if using to identify covariates in addition to the actual batches themselves.
